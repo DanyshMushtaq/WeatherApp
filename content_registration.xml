@@ -1,0 +1,71 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/login_bckgnd"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION PAGE"
+            android:textSize="30dp"
+            android:textColor="@color/aqua"
+            android:paddingBottom="25dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:paddingBottom="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose a Username "
+            android:id="@+id/uname"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:textColor="@color/grey"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:paddingBottom="5dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose a  Password"
+            android:id="@+id/pwd"
+            android:inputType="numberPassword"
+            android:imeOptions="actionDone"
+            android:textColor="@color/grey"
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:onClick="onSave"
+            />
+    </LinearLayout></ScrollView>
